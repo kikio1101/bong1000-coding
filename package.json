@@ -1,0 +1,22 @@
+{
+  "name": "bong1000-coding",
+  "version": "1.0.0",
+  "description": "봉천코딩야학에 오신걸 환영합니다.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd client && npm run start\" \"cd server && npm run start:dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikio1101/bong1000-coding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kikio1101/bong1000-coding/issues"
+  },
+  "homepage": "https://github.com/kikio1101/bong1000-coding#readme",
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
