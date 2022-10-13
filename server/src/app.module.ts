@@ -13,8 +13,6 @@ import { Product } from './products/entities/product.entity';
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'db.sqlite',
-      // db이름
-      // 파일명과 일치해야함
       entities: [Product],
       synchronize: true,
     }),
@@ -26,7 +24,5 @@ import { Product } from './products/entities/product.entity';
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
     consumer.apply(LoggerMiddleware).forRoutes('*');
-    // consumer.apply(LoggerMiddleware).forRoutes('products');  products 라우터에만 쓰겠다는 의미
-    // consumer.apply(LoggerMiddleware).forRoutes('*'); 로 하면 전체 라우터(전체 엔드포인트)에 적용됨
   }
 }
