@@ -25,6 +25,13 @@
 터미널 root 경로에서 npm start # client와 server가 동시에 구동
 ```
 
+### 더미 데이터 삽입
+
+1. npm start 명령어를 이용해서 client와 server 구동
+1. vscode 확장플러그인에서 SQLite 설치
+1. server 폴더에 위치한 create-seed.sql 파일을 열고 오른쪽 마우스를 누르면 나타나는 메뉴에서 run Query 클릭
+1. 상단 팔레트 창에서 server/db.sqlite 선택 (server가 구동중인 상태여야 나타남)
+
 ### API 문서 (TODO)
 
 서버가 켜진 상태에서 http://localhost:8000/docs

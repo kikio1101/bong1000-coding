@@ -1,6 +1,3 @@
-# DB
-db.sqlite
-
 # compiled output
 /dist
 /node_modules
