@@ -1,7 +1,24 @@
 import "./App.css";
+import ProductClient from "./service/product-client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./pages/Main";
+import NotFound from "./pages/NotFound";
 
-function App() {
-  return <div className="App">안녕하세요!!</div>;
+export interface IAppProps {
+  productController: ProductClient;
 }
+const App = ({ productController }: IAppProps) => {
+  return (
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={<Main productController={productController} />}
+        />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
