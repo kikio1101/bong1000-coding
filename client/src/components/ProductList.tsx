@@ -44,7 +44,7 @@ const ProductList = memo(({ name, type, color, price }: ProductListProps) => {
             </p>
           </div>
           <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-            {price}
+            {price}원
           </div>
         </div>
       </li>
