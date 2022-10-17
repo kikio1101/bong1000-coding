@@ -4,7 +4,7 @@
   "description": "봉천코딩야학에 오신걸 환영합니다.",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd client && npm run start\" \"cd server && npm run start:dev\""
+    "start": "concurrently \"cd server && npm run start:dev\" \"cd client && sleep 5 && npm run start\""
   },
   "repository": {
     "type": "git",
