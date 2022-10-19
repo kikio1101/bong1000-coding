@@ -18,9 +18,9 @@ const Main = memo(({ productController }: IAppProps) => {
   return (
     <>
       <main>
-        <div className="max-w-2xl mx-auto py-40">
-          <div className="p-4 max-w-lg mx-auto bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-            <div className="flex justify-between items-center mb-4">
+        <div className="max-w-2xl py-40 mx-auto">
+          <div className="max-w-lg p-4 mx-auto bg-white border rounded-lg shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div className="flex items-center justify-between mb-4">
               <h3 className="text-xl font-bold leading-none text-gray-900 dark:text-white">
                 가을맞이 신규 상품 목록
               </h3>
